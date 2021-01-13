@@ -14,6 +14,6 @@ class MyProfileView(generics.RetrieveUpdateAPIView):
         # self.request.userはログインユーザの情報
         return self.request.user
 
-class TaskViewSet(viewsets.ModelViewset):
-    queryset = Task.objects.ali()
+class TaskViewSet(viewsets.ModelViewSet):
+    queryset = Task.objects.all()
     serializer_class = TaskSerializer
